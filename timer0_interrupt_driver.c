@@ -29,7 +29,7 @@ void TIMER0_HANDLER()__irq
         VICVectAddr=0;
 }
 
-void config_vic_for_TIMER0()
+void config_VIC_for_timer0()
 {
         VICIntSelect=0;
         VICVectCntl0=(1<<5)|4;

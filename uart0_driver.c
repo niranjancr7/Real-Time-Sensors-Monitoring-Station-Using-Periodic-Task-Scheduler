@@ -74,8 +74,8 @@ void uart0_float(float num)
 				num=-num;uart0_tx('-');
 			}
 			a=num;
-			uart0_int(a);
+			uart0_integer(a);
 			uart0_tx('.');
 			a=(num-a)*1000000;
-			uart0_int(a);
+			uart0_integer(a);
 }
